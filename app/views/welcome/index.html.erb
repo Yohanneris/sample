@@ -1,0 +1,9 @@
+<h1>Bienvenue sur ta page d'accueil</h1>
+
+
+
+<% if logged_in? %>
+	<h2><%=  "session de notre utilisateur" %></h2>
+	<% else %>
+		<h2><%= link_to 'Sign-up', new_user_path %> Merci de vous inscrire.</h2>
+		<% end %>
